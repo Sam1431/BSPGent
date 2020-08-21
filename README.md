@@ -22,7 +22,7 @@ Here are some details about my setup:
 + **Terminal**: [Alacritty](https://github.com/alacritty/alacritty)
 + **Org editor**: [Doom Emacs](https://github.com/hlissner/doom-emacs/)
 + **File Manager**: [Thunar](https://git.xfce.org/xfce/thunar/)
-+ **Launcher**: [Dmenu]](https://tools.suckless.org/dmenu/)
++ **Launcher**: [Dmenu](https://tools.suckless.org/dmenu/)
 + **Browser**: Firefox
 
 ## New stuff
