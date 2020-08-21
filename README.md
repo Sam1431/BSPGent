@@ -38,7 +38,7 @@ The [setup section](#setup) will guide you through the installation process.
 ## Setup
 
 Here are the instructions you should follow to replicate my BSPWM setup.
-1. Dependencies
+> 1. Dependencies
   
   You will need the following packages
   
@@ -51,7 +51,7 @@ Here are the instructions you should follow to replicate my BSPWM setup.
   
 ****  
   
-3. Install needed fonts
+> 2. Install needed fonts
 
    You will need to install a few fonts (mainly icon fonts) in order for text and icons to be rendered properly.
 
@@ -70,10 +70,8 @@ Here are the instructions you should follow to replicate my BSPWM setup.
    ``` in your terminal
    fc-cache -v
    ```
->   
->
->
-4. Install my BSPWM configuration files
+   
+> 3. Install my BSPWM configuration files
 
    ``` in your terminal 
    git clone https://github.com/Sam1431/Gentoo-BSPWM.git
@@ -81,7 +79,7 @@ Here are the instructions you should follow to replicate my BSPWM setup.
 >
 >
 >
-5. Placement 
+> 4. Placement 
   
    ```
    Files in /Gentoo-BSPWM/.bin ----> /bin
