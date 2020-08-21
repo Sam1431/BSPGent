@@ -70,7 +70,7 @@ Here are the instructions you should follow to replicate my BSPWM setup.
    ``` in your terminal
    fc-cache -v
    ```
-   
+****   
 > 3. Install my BSPWM configuration files
 
    ``` in your terminal 
@@ -78,7 +78,7 @@ Here are the instructions you should follow to replicate my BSPWM setup.
    ```
 >
 >
->
+****
 > 4. Placement 
   
    ```
