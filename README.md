@@ -6,8 +6,7 @@
   <b> Sam's BSPWM setup </b>
 </p>
 
-<img src="
-![Gentoo](https://user-images.githubusercontent.com/68412503/90866235-3b30ec80-e3b1-11ea-8f77-0862f692c1ba.png)" alt="img" align="right" width="400px">
+<img src="https://github.com/Sam1431/Gentoo-BSPWM/blob/master/Gentoo.png" alt="img" align="right" width="400px">
 
 This is my BSPWM setup
 
