@@ -49,6 +49,8 @@ Here are the instructions you should follow to replicate my BSPWM setup.
   + **Dmenu2** - can be found in the repo's needed dependencies file [ Main Menu ]
   + **KsuperKey** - For some keybindings to work [ also will be found the needed dependencies file ]
   
+****  
+  
 3. Install needed fonts
 
    You will need to install a few fonts (mainly icon fonts) in order for text and icons to be rendered properly.
@@ -59,8 +61,8 @@ Here are the instructions you should follow to replicate my BSPWM setup.
    + **Icomoon-feather** - [ can be found in ~/home/.config/polybar/fonts]
    + **Ubuntu-Condensed** - [ can be found in ~/.home/.config/polybar/fonts ]
    + **Any one nerd font** - [website](https://www.nerdfonts.com/font-downloads)
-   
-   
+>
+>   
    - paste the .ttf fonts to `~/.local/share/fonts`.
    - It does not matter that the actual font files (`.ttf`) are deep inside multiple directories. They will be detected as long as they can be accessed from `~/.fonts` or `~/.local/share/fonts`.
 
@@ -68,13 +70,17 @@ Here are the instructions you should follow to replicate my BSPWM setup.
    ``` in your terminal
    fc-cache -v
    ```
-
+>   
+>
+>
 4. Install my BSPWM configuration files
 
    ``` in your terminal 
    git clone https://github.com/Sam1431/Gentoo-BSPWM.git
    ```
-
+>
+>
+>
 5. Placement 
   
    ```
