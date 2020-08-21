@@ -1,6 +1,5 @@
 <p align="center">
-  <img width="25%" src="![image](https://user-images.githubusercontent.com/68412503/90866126-0fae0200-e3b1-11ea-97c7-639372c77f9d.png)
-" />
+  <img width="25%" src="https://github.com/Sam1431/Gentoo-BSPWM/blob/master/gentoo.png" />
 </p>
 
 <p align="center">
