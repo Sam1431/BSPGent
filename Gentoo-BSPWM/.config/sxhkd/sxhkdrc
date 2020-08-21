@@ -1,0 +1,199 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	urxvt
+
+# terminal emulator in same window as currently focused
+super + shift + Return
+	urxvt
+
+# program launcher
+super + d
+        dmenu_recency -h 32 -y 12 -x 12 -w 1342 -fn 'fantasque Sans Mono:size:10' -p 'App Menu :' -sf "#fefefe" -o 0.9
+##rofi -show drun
+
+# make sxhkd reload its configuration files:
+super + shift + Escape
+	pkill -USR1 -x sxhkd
+
+# Open sxhkdrc config file
+super F1
+	urxvt -e vim $HOME/.config/sxhkd/sxhkdrc
+
+#
+# bspwm hotkeys
+#
+
+# restart bspwm
+super + shift + r
+        pkill ksuperkey && bspc wm -r
+
+# quick bspwm
+super + shift + e
+        scrot
+
+# close and kill
+super + x
+	bspc node -c
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,shift + space,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+#super + ctrl + {m,x,y,z}
+#	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+#super + {_,shift + }{h,j,k,l}
+#	bspc node -{f,s} {west,south,north,east}
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the next/previous node in the current desktop
+super + {_,shift + }Tab
+	bspc node -f {next,prev}.local
+
+super + 1
+    bspc desktop -f 1
+super + 2
+    bspc desktop -f 2
+super + 3
+    bspc desktop -f 3
+super + 4
+    bspc desktop -f 4
+super + 5
+    bspc desktop -f 5
+super + 6
+    bspc desktop -f 6
+super + 7
+    bspc desktop -f 7
+super + 8
+    bspc desktop -f 8
+super + 9
+    bspc desktop -f 9
+super + 0
+    bspc desktop -f 10
+
+# Temporary fix (Weird bug when other more simple binding was used.)
+super + shift + 1
+    bspc node -d 1
+super + shift + 2
+    bspc node -d 2
+super + shift + 3
+    bspc node -d 3
+super + shift + 4
+    bspc node -d 4
+super + shift + 5
+    bspc node -d 5
+super + shift + 6
+    bspc node -d 6
+super + shift + 7
+    bspc node -d 7
+super + shift + 8
+    bspc node -d 8
+super + shift + 9
+    bspc node -d 9
+super + shift + 0
+    bspc node -d 10
+# focus or send to the given desktop
+#super + {_,shift + }{1-9,0}
+#	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + shift + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + ctrl + {Left,Down,Up,Right}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# ===================================
+# ========== User-specific ==========
+# ===================================
+
+super + w
+	chromium
+
+super + h
+	urxvt -e ranger
+
+super + shift + r
+	urxvt -e sudo ranger
+
+super + shift + x
+    sudo betterlockscreen -l
+
+super + s
+    ~/Scripts/scratchy.sh
+
+super + shift + s
+    spotify
+
+super + e
+    rofi -show window 
+
+super + c
+    code
+
+super + shift + i
+    imgur-screenshot
+
+super + ctrl + i
+    maim -s | xclip -selection clipboard -t image/png 
+
+# Screen brightness control
+Print
+    scrot
+XF86MonBrightnessDown
+    sudo light -U 10
+XF86MonBrightnessUp
+    sudo light -A 10
+# Volume control
+XF86AudioRaiseVolume
+    /usr/bin/pulseaudio-ctl up 10
+XF86AudioLowerVolume
+    /usr/bin/pulseaudio-ctl down 10
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
+# Play/pause
+XF86AudioPlay
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause 
+# Next/prev
+XF86AudioNext
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+XF86AudioPrev
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+

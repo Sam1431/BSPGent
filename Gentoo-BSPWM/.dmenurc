@@ -1,0 +1,26 @@
+#!/bin/bash
+# ~/.dmenurc
+
+## define the font for dmenu to be used
+#DMENU_FN="-zevv-peep-medium-*-normal--20-175-*-*-c-*-iso8859-15"
+#DMENU_FN="-*-terminus-medium-r-normal-*-20-*-*-*-*-*-iso10646-*"
+DMENU_FN="Hack-10"
+
+## background colour for unselected menu-items
+DMENU_NB="#282a36"
+
+## textcolour for unselected menu-items
+DMENU_NF="#fefefe"
+
+## background colour for selected menu-items
+DMENU_SB="#bd93f9"
+
+## textcolour for selected menu-items
+DMENU_SF="#282a36"
+
+## command for the terminal application to be used:
+TERMINAL_CMD="alacritty -e"
+
+## export our variables
+DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
+export DMENU_FN DMENU_NB DMENU_NF DMENU_SF DMENU_SB DMENU_OPTIONS TERMINAL
