@@ -123,5 +123,6 @@ I use <kbd>super</kbd> as my modkey
 | `Super + right mouse button(drag)` | Resize Client (In floating) |
 | `Super + Left Mouse Button (drag)` | Move Client (In floating) |
 
+****
 
  > Don't forget to star this repo [ only if you like It ] 💙
