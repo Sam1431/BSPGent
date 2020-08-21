@@ -12,7 +12,9 @@ This is my BSPWM setup
 
 The [setup section](#setup) will guide you through the installation process.
 
-Here are some details about my setup:
+****
+
+## My Specs:
 
 + **WM**: [BSPWM](https://github.com/baskerville/bspwm)
 + **OS**: Gentoo
@@ -23,11 +25,15 @@ Here are some details about my setup:
 + **Launcher**: [Dmenu](https://tools.suckless.org/dmenu/)
 + **Browser**: Firefox
 
+****
+
 ## New stuff
 
 - Code Name : GALAHAD 
 - Now much more Keyboard centric
 - Retro Theme [ INSTEAD OF MINIMALISM ]
+
+****
 
 ## Setup
 
@@ -79,6 +85,7 @@ Here are the instructions you should follow to replicate my BSPWM setup.
    compile the files in needed dependencies [ KsuperKey & Dmenu2 ]
    ```
    
+****
    
 ## Keybinds
 
@@ -104,10 +111,13 @@ I use <kbd>super</kbd> as my modkey
 
 *... And many many more.*
 
+****
+
 #### Mouse
 | Mousebind | Action |
 | --- | --- |
 | `Super + right mouse button(drag)` | Resize Client (In floating) |
 | `Super + Left Mouse Button (drag)` | Move Client (In floating) |
 
- Don't forget to star this repo [ only if you like It ]! 💙
+
+ > Don't forget to star this repo [ only if you like It ] 💙
