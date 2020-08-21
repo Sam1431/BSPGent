@@ -41,25 +41,25 @@ Here are the instructions you should follow to replicate my BSPWM setup.
 1. Dependencies
   
   You will need the following packages
-  ```
+  
   + **BspWM** - Obviously
   + **SXHKD** - Simple X HotKey Daemon [ FOR THE KEYBINDINGS ]
   + **Polybar** - Status Bar
   + **Alacritty** - Terminal used
   + **Dmenu2** - can be found in the repo's needed dependencies file [ Main Menu ]
   + **KsuperKey** - For some keybindings to work [ also will be found the needed dependencies file ]
-  ```
+  
 3. Install needed fonts
 
    You will need to install a few fonts (mainly icon fonts) in order for text and icons to be rendered properly.
 
    Necessary fonts:
-   ```
+   
    + **FontAwesome** - [ dependency for polybar ]
    + **Icomoon-feather** - [ can be found in ~/home/.config/polybar/fonts]
    + **Ubuntu-Condensed** - [ can be found in ~/.home/.config/polybar/fonts ]
    + **Any one nerd font** - [website](https://www.nerdfonts.com/font-downloads)
-   ```
+   
    
    - paste the .ttf fonts to `~/.local/share/fonts`.
    - It does not matter that the actual font files (`.ttf`) are deep inside multiple directories. They will be detected as long as they can be accessed from `~/.fonts` or `~/.local/share/fonts`.
