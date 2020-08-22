@@ -100,7 +100,7 @@ I use <kbd>super</kbd> as my modkey
 | --- | --- |
 | <kbd>super + enter</kbd> | Spawn terminal |
 | <kbd>super</kbd> | Launch dmenu (Super + d , if ksuperkey is not installed) |
-| <kbd>super + q</kbd> | Close client |
+| <kbd>super + x</kbd> | Close client |
 | <kbd>super + space</kbd> | Toggle floating client |
 | <kbd>super + [1-0]</kbd> | change workspace |
 | <kbd>super + shift + [1-0]</kbd> | Move focused client to tag |
@@ -108,7 +108,7 @@ I use <kbd>super</kbd> as my modkey
 | <kbd>super + space</kbd> | Floating layout |
 | <kbd>super + f</kbd> | Maximized / Monocle layout |
 | <kbd>super + [arrow keys]</kbd> | Change focus by direction |
-| <kbd>super + shift + [arrow keys]</kbd> | Move client by direction. Move to edge if it is floating. |
+| <kbd>super + shift + [arrow keys]</kbd> | Move client by direction. |
 | <kbd>super + alt + [arrow keys]</kbd> | expand client in the given direction |
 | <kbd>super + control + [arrow keys]</kbd> | shrink client in the given direction |
 | <kbd>super + f</kbd> | Toggle fullscreen |
