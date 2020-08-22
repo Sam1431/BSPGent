@@ -125,4 +125,4 @@ I use <kbd>super</kbd> as my modkey
 
 ****
 
- > Don't forget to star this repo [ only if you like It ] 💙
+ > Don't forget to star this repo [ just for fun ] 💙
